@@ -1,0 +1,2 @@
+<script setup lang="ts">defineProps<{items:{code:string,title:string,desc:string}[]}>()</script>
+<template><div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4"><article v-for="item in items" :key="item.code" class="card group p-7 transition duration-300 hover:-translate-y-2 hover:border-[#C9A86A]/50"><div class="mb-10 text-xs tracking-widest text-[#B28D4D]">{{ item.code }}</div><h3 class="text-xl font-semibold text-[#0B1F33]">{{ item.title }}</h3><p class="mt-4 text-sm leading-7 text-slate-500">{{ item.desc }}</p></article></div></template>
