@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root { --navy:#0B1F33; --gold:#C9A86A; --mist:#F7F8FA; }
-html { scroll-behavior:smooth; }
-body { margin:0; color:#17283a; background:#fff; font-family:Inter,"Noto Sans SC",sans-serif; -webkit-font-smoothing:antialiased; }
+html { scroll-behavior:smooth; overflow-x:hidden; }
+body { margin:0; min-width:320px; overflow-x:hidden; color:#17283a; background:#fff; font-family:Inter,"Noto Sans SC",sans-serif; -webkit-font-smoothing:antialiased; }
 ::selection { background:#c9a86a; color:#0b1f33; }
 .container-shell { width:min(1180px,calc(100% - 40px)); margin-inline:auto; }
 .section-pad { padding:112px 0; }
@@ -18,4 +18,19 @@ body { margin:0; color:#17283a; background:#fff; font-family:Inter,"Noto Sans SC
 .btn-secondary:hover { border-color:#c9a86a; color:#e2c993; }
 .reveal { animation:rise .8s ease both; }
 @keyframes rise { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }
-@media (max-width:768px){ .section-pad{padding:76px 0}.container-shell{width:min(100% - 28px,1180px)} }
+@media (max-width:768px){
+  .section-pad{padding:68px 0}
+  .container-shell{width:min(100% - 28px,1180px)}
+  .section-title{font-size:clamp(30px,9vw,40px);line-height:1.2}
+  .section-copy{font-size:15px;line-height:1.8}
+  .card{border-radius:18px}
+}
+@media (max-width:420px){
+  .section-pad{padding:60px 0}
+  .btn-primary,.btn-secondary{width:100%;min-height:50px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{animation:none}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
