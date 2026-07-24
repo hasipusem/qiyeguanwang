@@ -28,7 +28,7 @@ async function submit() {
       'bot-field': form.botField
     })
 
-    await $fetch('/', {
+    await $fetch('/netlify-form.html', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: body.toString()
