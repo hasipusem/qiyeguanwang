@@ -31,6 +31,9 @@ const improvementSignals = ['市场数据', '消费者反馈', '广告表现', '
       eyebrow="PLANET GLOBAL BRAND OPERATING SYSTEM"
       title="让全球品牌运营，成为一套可复制的系统"
       desc="PGBOS 不是单一的平台代运营，而是贯穿市场洞察、产品研发、品牌建设、全球销售、供应链协同及持续迭代的完整经营体系。"
+      image="/images/overseas-warehouse.png"
+      image-alt="全球海外仓与数字化履约网络"
+      image-label="GLOBAL OPERATING INFRASTRUCTURE"
     />
 
     <section class="border-b border-slate-100 bg-white">
@@ -173,6 +176,17 @@ const improvementSignals = ['市场数据', '消费者反馈', '广告表现', '
           <div class="eyebrow">GLOBAL INFRASTRUCTURE</div>
           <h2 class="section-title mt-5">让产品真正进入全球市场</h2>
           <p class="section-copy mt-6">产品上市只是开始。品牌、认证、渠道、广告、仓储和售后共同决定一个项目能否长期经营。</p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-14">
+          <figure class="relative overflow-hidden rounded-3xl">
+            <NuxtImg src="/images/overseas-warehouse.png" alt="行星跨境海外仓履约场景" class="aspect-[16/9] w-full object-cover" sizes="100vw sm:50vw" loading="lazy" />
+            <figcaption class="absolute bottom-4 left-4 rounded-full bg-[#071725]/75 px-4 py-2 text-xs text-white backdrop-blur-md">海外仓储与本地履约</figcaption>
+          </figure>
+          <figure class="relative overflow-hidden rounded-3xl">
+            <NuxtImg src="/images/about/operations.webp" alt="全球品牌数字化运营团队" class="aspect-[16/9] w-full object-cover" sizes="100vw sm:50vw" loading="lazy" />
+            <figcaption class="absolute bottom-4 left-4 rounded-full bg-[#071725]/75 px-4 py-2 text-xs text-white backdrop-blur-md">数据驱动全球运营</figcaption>
+          </figure>
         </div>
 
         <div class="mt-10 grid gap-4 lg:mt-14 lg:grid-cols-2">

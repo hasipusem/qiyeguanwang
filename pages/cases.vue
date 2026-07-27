@@ -19,6 +19,9 @@ const filteredCases = computed(() => activeCategory.value === '全部'
       eyebrow="PARTNERSHIP CASES"
       title="从制造优势，到全球品牌增长"
       desc="围绕市场洞察、产品共创、品牌建设、渠道运营与全球履约，我们与制造伙伴共同探索长期增长路径。"
+      image="/images/cases/smart-mirror.webp"
+      image-alt="智能镜全球品牌合作案例"
+      image-label="FROM PRODUCT TO GLOBAL BRAND"
     />
 
     <section class="border-b border-amber-200/60 bg-[#FBF8F1] py-5">

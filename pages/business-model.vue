@@ -13,6 +13,9 @@ usePageSeo(
       eyebrow="PARTNERSHIP MODEL"
       title="不是一次交易，而是一项长期事业"
       desc="全球品牌联营是一种品牌共建、资源共享、利润共享、风险共担的新型合作模式。"
+      image="/images/about/operations.webp"
+      image-alt="行星跨境全球运营团队协作"
+      image-label="BRAND CO-BUILDING"
     />
 
     <section class="section-pad">
@@ -48,6 +51,14 @@ usePageSeo(
               <span v-for="item in ['市场研究','AI 选品','品牌建设','平台运营','海外仓储','全球营销','客户服务','数据优化']" :key="item">✓ {{ item }}</span>
             </div>
           </article>
+        </div>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2">
+          <figure class="overflow-hidden rounded-3xl border border-white/10">
+            <NuxtImg src="/images/about/product-rd.webp" alt="制造企业与产品研发协同" class="aspect-[16/9] w-full object-cover" sizes="100vw sm:50vw" loading="lazy" />
+          </figure>
+          <figure class="overflow-hidden rounded-3xl border border-white/10">
+            <NuxtImg src="/images/about/customer-service.webp" alt="全球市场客户服务与运营支持" class="aspect-[16/9] w-full object-cover" sizes="100vw sm:50vw" loading="lazy" />
+          </figure>
         </div>
       </div>
     </section>

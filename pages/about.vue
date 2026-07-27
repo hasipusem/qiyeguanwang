@@ -37,6 +37,9 @@ const teamCapabilities = [
       eyebrow="ABOUT PLANET"
       title="连接中国制造与全球消费市场"
       desc="我们不是采购商、传统电商卖家或第三方代运营，而是全球供应链整合商、全球渠道运营商和品牌联营平台。"
+      image="/images/about/office.webp"
+      image-alt="行星跨境办公与团队协作环境"
+      image-label="PLANET TEAM · GUANGZHOU"
     />
 
     <section class="section-pad">

@@ -7,6 +7,12 @@ usePageSeo(
 )
 
 const activeIndustry = ref(industries[0])
+const industryImages: Record<string, { src: string; alt: string }> = {
+  mirror: { src: '/images/cases/smart-mirror.webp', alt: '智能镜与镜类空间产品' },
+  furniture: { src: '/images/cases/indoor-furniture.webp', alt: '面向欧美市场的室内家具产品' },
+  bathroom: { src: '/images/cases/bathroom-space.webp', alt: '中高端卫浴空间产品' },
+  lifestyle: { src: '/images/cases/outdoor-living.webp', alt: '户外家具与全球生活方式产品' }
+}
 </script>
 
 <template>
@@ -15,6 +21,9 @@ const activeIndustry = ref(industries[0])
       eyebrow="INDUSTRY PARTNERSHIP"
       title="聚焦家居产业，共建全球生活空间品牌"
       desc="我们寻找的不只是供应商，而是在产品、品质与长期主义上高度一致的制造伙伴。以市场数据确定机会，以联合研发创造产品，以全球运营沉淀品牌资产。"
+      image="/images/cases/indoor-furniture.webp"
+      image-alt="全球家居品牌合作场景"
+      image-label="HOME & LIVING CATEGORIES"
     />
 
     <section class="border-b border-slate-100 bg-white">
@@ -60,29 +69,41 @@ const activeIndustry = ref(industries[0])
             </div>
           </div>
 
-          <article class="overflow-hidden rounded-3xl bg-[#0B1F33] p-6 text-white sm:p-9 lg:p-11">
-            <div class="text-xs tracking-[.2em] text-[#C9A86A]">{{ activeIndustry.en }}</div>
-            <h3 class="mt-4 text-3xl font-semibold sm:text-4xl">{{ activeIndustry.name }}</h3>
-            <p class="mt-5 max-w-2xl text-sm leading-7 text-white/60 sm:text-base sm:leading-8">{{ activeIndustry.opportunity }}</p>
-            <div class="mt-8 grid gap-7 border-t border-white/10 pt-8 sm:grid-cols-2">
-              <div>
-                <div class="text-sm font-medium text-white">重点制造能力</div>
-                <ul class="mt-4 space-y-3">
-                  <li v-for="item in activeIndustry.capabilities" :key="item" class="flex gap-3 text-sm text-white/55">
-                    <span class="text-[#C9A86A]">✓</span>{{ item }}
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <div class="text-sm font-medium text-white">可启动的合作</div>
-                <ul class="mt-4 space-y-3">
-                  <li v-for="item in activeIndustry.cooperation" :key="item" class="flex gap-3 text-sm text-white/55">
-                    <span class="text-[#C9A86A]">→</span>{{ item }}
-                  </li>
-                </ul>
-              </div>
+          <article class="overflow-hidden rounded-3xl bg-[#0B1F33] text-white">
+            <div class="relative overflow-hidden">
+              <NuxtImg
+                :src="industryImages[activeIndustry.slug].src"
+                :alt="industryImages[activeIndustry.slug].alt"
+                class="aspect-[16/8] w-full object-cover transition duration-500"
+                sizes="100vw lg:65vw"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-[linear-gradient(0deg,rgba(11,31,51,.68)_0%,transparent_65%)]"></div>
+              <span class="absolute bottom-4 left-5 rounded-full bg-[#071725]/75 px-4 py-2 text-[10px] tracking-[.16em] text-white/75 backdrop-blur-md">{{ activeIndustry.en }}</span>
             </div>
-            <NuxtLink to="/#apply" class="btn-primary mt-9">咨询该行业合作 →</NuxtLink>
+            <div class="p-6 sm:p-9 lg:p-11">
+              <h3 class="text-3xl font-semibold sm:text-4xl">{{ activeIndustry.name }}</h3>
+              <p class="mt-5 max-w-2xl text-sm leading-7 text-white/60 sm:text-base sm:leading-8">{{ activeIndustry.opportunity }}</p>
+              <div class="mt-8 grid gap-7 border-t border-white/10 pt-8 sm:grid-cols-2">
+                <div>
+                  <div class="text-sm font-medium text-white">重点制造能力</div>
+                  <ul class="mt-4 space-y-3">
+                    <li v-for="item in activeIndustry.capabilities" :key="item" class="flex gap-3 text-sm text-white/55">
+                      <span class="text-[#C9A86A]">✓</span>{{ item }}
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="text-sm font-medium text-white">可启动的合作</div>
+                  <ul class="mt-4 space-y-3">
+                    <li v-for="item in activeIndustry.cooperation" :key="item" class="flex gap-3 text-sm text-white/55">
+                      <span class="text-[#C9A86A]">→</span>{{ item }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <NuxtLink to="/#apply" class="btn-primary mt-9">咨询该行业合作 →</NuxtLink>
+            </div>
           </article>
         </div>
       </div>
