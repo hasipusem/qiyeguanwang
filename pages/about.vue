@@ -164,10 +164,6 @@ const teamCapabilities = [
                 <dt class="text-xs text-white/30">公司地址</dt>
                 <dd class="mt-2 text-white/45">广州市白云区未来智都 T1 栋 702</dd>
               </div>
-              <div>
-                <dt class="text-xs text-white/30">办公时间</dt>
-                <dd class="mt-2 text-white/45">待补充</dd>
-              </div>
             </dl>
             <div>
               <div class="grid grid-cols-2 gap-3">
