@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-labelledby="title">
+  <title id="title">TikTok Shop</title>
+  <rect width="240" height="64" rx="10" fill="#fff"/>
+  <g transform="translate(10 7)">
+    <path d="M31 8v24.5a11.5 11.5 0 1 1-9.8-11.4v7.3a4.8 4.8 0 1 0 3.1 4.5V8z" fill="#25F4EE" transform="translate(-2 2)"/>
+    <path d="M31 8c1.5 7.1 5.5 10.8 12 11.3v7c-4.5-.1-8.6-1.5-12-4.2v10.4a11.5 11.5 0 1 1-9.8-11.4v7.3a4.8 4.8 0 1 0 3.1 4.5V8z" fill="#FE2C55" transform="translate(2 -1)"/>
+    <path d="M31 8c1.5 7.1 5.5 10.8 12 11.3v7c-4.5-.1-8.6-1.5-12-4.2v10.4a11.5 11.5 0 1 1-9.8-11.4v7.3a4.8 4.8 0 1 0 3.1 4.5V8z" fill="#111"/>
+  </g>
+  <text x="66" y="40" fill="#111" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">TikTok Shop</text>
+</svg>

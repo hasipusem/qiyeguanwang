@@ -1,7 +1,7 @@
-export const platforms = ['Amazon','Walmart','Wayfair','Home Depot',"Lowe's",'Target','OTTO','Kaufland']
+export const platforms = ['Amazon','Walmart','Wayfair','Home Depot',"Lowe's",'Target','OTTO','Kaufland','TikTok Shop','Shopify']
 export const markets = [
-  { name:'北美', x:'18%', y:'39%' },{ name:'欧洲', x:'50%', y:'29%' },{ name:'中东', x:'60%', y:'51%' },
-  { name:'日本', x:'82%', y:'42%' },{ name:'澳洲', x:'84%', y:'74%' }
+  { name:'北美', x:'18%', y:'39%' },{ name:'欧洲', x:'50%', y:'29%' },{ name:'日本', x:'82%', y:'42%' },
+  { name:'澳洲', x:'84%', y:'74%' },{ name:'新西兰', x:'91%', y:'82%' }
 ]
 
 export const marketplaceGroups = [
@@ -15,7 +15,9 @@ export const marketplaceGroups = [
       { name: 'Wayfair', logo: '/images/platforms/wayfair.png', role: '专业家居垂直渠道' },
       { name: 'Home Depot', logo: '/images/platforms/homedepot.png', role: '家装与卫浴核心渠道' },
       { name: `Lowe's`, logo: '/images/platforms/lowes.png', role: '家居改善零售渠道' },
-      { name: 'Target', logo: '/images/platforms/target.svg', role: '品质生活消费渠道' }
+      { name: 'Target', logo: '/images/platforms/target.svg', role: '品质生活消费渠道' },
+      { name: 'TikTok Shop', logo: '/images/platforms/tiktok.svg', role: '内容电商与社交增长渠道' },
+      { name: 'Shopify', logo: '/images/platforms/shopify.svg', role: '品牌独立站与私域经营' }
     ]
   },
   {
@@ -43,7 +45,7 @@ export const countryMarkets = [
   { country: '波兰', code: 'PL', flag: '/images/flags/pl.svg', region: '欧洲', focus: '家具、家居用品' },
   { country: '日本', code: 'JP', flag: '/images/flags/jp.svg', region: '亚洲', focus: '精细家居、收纳' },
   { country: '澳大利亚', code: 'AU', flag: '/images/flags/au.svg', region: '大洋洲', focus: '家居、户外生活' },
-  { country: '阿联酋', code: 'AE', flag: '/images/flags/ae.svg', region: '中东', focus: '中高端家居、卫浴' }
+  { country: '新西兰', code: 'NZ', flag: '/images/flags/nz.svg', region: '大洋洲', focus: '家居、户外生活' }
 ]
 
 export const channelCapabilities = [

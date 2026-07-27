@@ -16,7 +16,7 @@ usePageSeo(
 )
 
 const certifications = ['CE', 'UL', 'ETL', 'FCC', 'PSE', 'GS', 'UKCA', 'RoHS', 'REACH', 'WEEE']
-const platforms = ['Amazon', 'Walmart', 'Wayfair', 'Home Depot', `Lowe's`, 'Target', 'OTTO', 'Kaufland', 'BOL', 'Allegro']
+const platforms = ['Amazon', 'Walmart', 'Wayfair', 'Home Depot', `Lowe's`, 'Target', 'OTTO', 'Kaufland', 'BOL', 'Allegro', 'TikTok Shop', 'Shopify']
 const brands = [
   ['HASIPU', '室内镜类生活品牌'],
   ['Winnice', '中高端室内家具品牌'],

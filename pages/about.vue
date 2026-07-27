@@ -155,11 +155,11 @@ const teamCapabilities = [
               </div>
               <div>
                 <dt class="text-xs text-white/30">联系电话</dt>
-                <dd class="mt-2 text-white/45">待补充</dd>
+                <dd class="mt-2"><a href="tel:+8613590596913" class="text-white/70 transition hover:text-[#C9A86A]">+86 135 9059 6913</a></dd>
               </div>
               <div>
                 <dt class="text-xs text-white/30">公司地址</dt>
-                <dd class="mt-2 text-white/45">待补充</dd>
+                <dd class="mt-2 text-white/45">广州市白云区未来智都 T1 栋 702</dd>
               </div>
               <div>
                 <dt class="text-xs text-white/30">办公时间</dt>

@@ -14,7 +14,7 @@ const links = [
         <span class="grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-white p-1">
           <img src="/android-chrome-192x192.png" alt="" class="h-full w-full object-contain" aria-hidden="true">
         </span>
-        <span class="min-w-0"><b class="block whitespace-nowrap text-[14px] tracking-[.15em] sm:text-[15px] sm:tracking-[.18em]">行星跨境</b><small class="hidden text-[9px] tracking-[.22em] text-white/45 min-[370px]:block">PLANET CROSS-BORDER</small></span>
+        <span class="min-w-0"><b class="block whitespace-nowrap text-[14px] tracking-[.15em] sm:text-[15px] sm:tracking-[.18em]">行星跨境</b><small class="hidden text-[9px] tracking-[.22em] text-white/45 min-[370px]:block">PLANET E-commerce</small></span>
       </NuxtLink>
       <nav class="hidden items-center gap-4 xl:gap-6 lg:flex">
         <NuxtLink v-for="[label,to] in links" :key="to" :to="to" class="text-sm text-white/68 transition hover:text-[#D7BC83]">{{ label }}</NuxtLink>

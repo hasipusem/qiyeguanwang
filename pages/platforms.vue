@@ -8,7 +8,7 @@ import {
 
 usePageSeo(
   '主营平台｜全球电商渠道与海外仓网络',
-  '行星跨境覆盖 Amazon、Walmart、Wayfair、Home Depot、Lowe’s、Target、OTTO、Kaufland、BOL、Allegro 等主流平台，并建立覆盖 20 多个国家和地区的海外仓履约网络。',
+  '行星跨境覆盖 Amazon、Walmart、Wayfair、Home Depot、Lowe’s、Target、TikTok Shop、Shopify、OTTO、Kaufland、BOL、Allegro 等主流平台，并建立覆盖 20 多个国家和地区的海外仓履约网络。',
   '全球电商平台,Amazon合作,Walmart合作,Wayfair合作,海外仓物流,制造企业出海,全球渠道运营'
 )
 </script>
@@ -87,7 +87,7 @@ usePageSeo(
         <div class="max-w-3xl">
           <div class="eyebrow">MARKET FOOTPRINT</div>
           <h2 class="section-title mt-5">覆盖全球主要消费市场</h2>
-          <p class="section-copy mt-6">围绕北美、欧洲、日本、澳洲及中东市场，按国家消费习惯、法规和渠道特点开展本地化运营。</p>
+          <p class="section-copy mt-6">围绕北美、欧洲、日本、澳大利亚及新西兰市场，按国家消费习惯、法规和渠道特点开展本地化运营。</p>
         </div>
         <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 md:mt-14">
           <article v-for="market in countryMarkets" :key="market.code" class="group rounded-2xl border border-slate-200 bg-white p-4 transition hover:-translate-y-1 hover:border-[#C9A86A]/60 hover:shadow-lg sm:p-5">

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title">
+  <title id="title">New Zealand flag</title>
+  <path fill="#012169" d="M0 0h1200v600H0z"/>
+  <g>
+    <path stroke="#fff" stroke-width="100" d="m0 0 600 300m0-300L0 300"/>
+    <path stroke="#C8102E" stroke-width="60" d="m0 0 600 300m0-300L0 300"/>
+    <path stroke="#fff" stroke-width="100" d="M300 0v300M0 150h600"/>
+    <path stroke="#C8102E" stroke-width="60" d="M300 0v300M0 150h600"/>
+  </g>
+  <g fill="#C8102E" stroke="#fff" stroke-width="12">
+    <path d="m900 92 14 35 37 2-29 23 10 36-32-20-32 20 10-36-29-23 37-2z"/>
+    <path d="m760 242 14 35 37 2-29 23 10 36-32-20-32 20 10-36-29-23 37-2z"/>
+    <path d="m970 292 14 35 37 2-29 23 10 36-32-20-32 20 10-36-29-23 37-2z"/>
+    <path d="m860 435 14 35 37 2-29 23 10 36-32-20-32 20 10-36-29-23 37-2z"/>
+  </g>
+</svg>

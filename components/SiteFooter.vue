@@ -36,11 +36,11 @@
             </div>
             <div>
               <dt class="text-xs text-white/30">联系电话</dt>
-              <dd class="mt-1.5 text-white/45">待补充</dd>
+              <dd class="mt-1.5"><a href="tel:+8613590596913" class="text-white/65 transition hover:text-[#D6B97E]">+86 135 9059 6913</a></dd>
             </div>
             <div>
               <dt class="text-xs text-white/30">公司地址</dt>
-              <dd class="mt-1.5 leading-6 text-white/45">待补充</dd>
+              <dd class="mt-1.5 leading-6 text-white/45">广州市白云区未来智都 T1 栋 702</dd>
             </div>
           </dl>
         </div>
@@ -52,7 +52,7 @@
               <div class="overflow-hidden rounded-xl bg-white p-1.5">
                 <img :src="qr" :alt="`企业微信商务咨询二维码 ${index + 1}`" class="aspect-square w-full object-contain">
               </div>
-              <p class="mt-2 text-center text-[10px] text-white/35">商务咨询 0{{ index + 1 }}</p>
+              <p class="mt-2 text-center text-[10px] text-white/35">{{ index === 0 ? 'Connect' : 'Business' }}</p>
             </div>
           </div>
           <p class="mt-3 text-xs text-white/30">扫码添加企业微信，咨询合作详情</p>
@@ -60,7 +60,7 @@
       </div>
 
       <div class="flex flex-col gap-2 pt-6 text-[11px] leading-6 text-white/30 sm:flex-row sm:items-center sm:justify-between sm:text-xs">
-        <span>© {{ new Date().getFullYear() }} Planet Cross-border. All rights reserved.</span>
+        <span>© {{ new Date().getFullYear() }} Planet E-commerce. All rights reserved.</span>
         <span>全球品牌联营 · 中国制造全球化</span>
       </div>
     </div>
