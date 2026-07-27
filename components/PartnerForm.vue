@@ -36,7 +36,7 @@ async function submit() {
 
     store.markSubmitted()
   } catch {
-    submitError.value = '提交暂时未成功，请稍后重试或发送邮件至 hasipusem@gmail.com。'
+    submitError.value = '提交暂时未成功，请稍后重试或发送邮件至 business@xingxingkuajing.com。'
   } finally {
     submitting.value = false
   }

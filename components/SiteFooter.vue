@@ -3,7 +3,9 @@
     <div class="container-shell">
       <div class="grid gap-10 border-b border-white/10 pb-10 sm:grid-cols-2 md:grid-cols-[1.25fr_.75fr_1.15fr_.8fr] md:gap-8 sm:pb-12">
         <div>
-          <div class="mb-5 text-lg font-semibold tracking-[.18em]">行星跨境</div>
+          <div class="mb-5 inline-flex rounded-xl bg-white p-2">
+            <img src="/brand/planet-logo-horizontal.png" alt="行星跨境 Planet E-commerce" class="h-10 w-auto object-contain sm:h-11">
+          </div>
           <p class="max-w-sm text-sm leading-7 text-white/50">
             连接中国优秀制造能力与全球消费市场，共同打造具有国际竞争力的品牌。
           </p>
@@ -27,8 +29,9 @@
           <dl class="space-y-4 text-sm">
             <div>
               <dt class="text-xs text-white/30">合作邮箱</dt>
-              <dd class="mt-1.5 break-all">
-                <a href="mailto:hasipusem@gmail.com" class="text-white/65 transition hover:text-[#D6B97E]">hasipusem@gmail.com</a>
+              <dd class="mt-1.5 space-y-1 break-all">
+                <a href="mailto:connect@xingxingkuajing.com" class="block text-white/65 transition hover:text-[#D6B97E]">connect@xingxingkuajing.com</a>
+                <a href="mailto:business@xingxingkuajing.com" class="block text-white/65 transition hover:text-[#D6B97E]">business@xingxingkuajing.com</a>
               </dd>
             </div>
             <div>
@@ -44,15 +47,15 @@
 
         <div>
           <div class="mb-4 text-xs tracking-[.2em] text-[#C9A86A]">企业微信</div>
-          <div class="grid h-32 w-32 place-items-center rounded-xl border border-dashed border-white/20 bg-white/[.04] p-3 text-center">
-            <div>
-              <div class="mx-auto grid h-8 w-8 grid-cols-3 gap-0.5 opacity-40" aria-hidden="true">
-                <span v-for="n in 9" :key="n" class="bg-white" :class="{ 'opacity-25': [2, 4, 6, 8].includes(n) }" />
+          <div class="grid grid-cols-2 gap-3">
+            <div v-for="(qr,index) in ['/images/contact/wechat-business-1.png','/images/contact/wechat-business-2.png']" :key="qr">
+              <div class="overflow-hidden rounded-xl bg-white p-1.5">
+                <img :src="qr" :alt="`企业微信商务咨询二维码 ${index + 1}`" class="aspect-square w-full object-contain">
               </div>
-              <p class="mt-2 text-[10px] leading-4 text-white/35">二维码待上传</p>
+              <p class="mt-2 text-center text-[10px] text-white/35">商务咨询 0{{ index + 1 }}</p>
             </div>
           </div>
-          <p class="mt-3 text-xs text-white/30">添加企业微信，咨询合作详情</p>
+          <p class="mt-3 text-xs text-white/30">扫码添加企业微信，咨询合作详情</p>
         </div>
       </div>
 

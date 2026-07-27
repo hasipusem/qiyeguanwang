@@ -149,7 +149,10 @@ const teamCapabilities = [
             <dl class="space-y-5 text-sm">
               <div>
                 <dt class="text-xs text-white/30">合作邮箱</dt>
-                <dd class="mt-2"><a href="mailto:hasipusem@gmail.com" class="text-white/70 transition hover:text-[#C9A86A]">hasipusem@gmail.com</a></dd>
+                <dd class="mt-2 space-y-1 break-all">
+                  <a href="mailto:connect@xingxingkuajing.com" class="block text-white/70 transition hover:text-[#C9A86A]">connect@xingxingkuajing.com</a>
+                  <a href="mailto:business@xingxingkuajing.com" class="block text-white/70 transition hover:text-[#C9A86A]">business@xingxingkuajing.com</a>
+                </dd>
               </div>
               <div>
                 <dt class="text-xs text-white/30">联系电话</dt>
@@ -165,12 +168,12 @@ const teamCapabilities = [
               </div>
             </dl>
             <div>
-              <div class="grid h-40 w-40 place-items-center rounded-2xl border border-dashed border-white/20 bg-white/[.04] text-center">
-                <div>
-                  <div class="mx-auto grid h-10 w-10 grid-cols-3 gap-0.5 opacity-40" aria-hidden="true">
-                    <span v-for="n in 9" :key="n" class="bg-white" :class="{ 'opacity-25': [2,4,6,8].includes(n) }" />
+              <div class="grid grid-cols-2 gap-3">
+                <div v-for="(qr,index) in ['/images/contact/wechat-business-1.png','/images/contact/wechat-business-2.png']" :key="qr">
+                  <div class="overflow-hidden rounded-2xl bg-white p-2">
+                    <img :src="qr" :alt="`企业微信商务咨询二维码 ${index + 1}`" class="aspect-square w-28 object-contain sm:w-32">
                   </div>
-                  <p class="mt-3 text-xs text-white/35">企业微信二维码<br>待上传</p>
+                  <p class="mt-2 text-center text-[10px] text-white/35">商务咨询 0{{ index + 1 }}</p>
                 </div>
               </div>
               <p class="mt-3 text-center text-xs text-white/30">扫码添加企业微信</p>

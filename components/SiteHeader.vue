@@ -11,7 +11,9 @@ const links = [
   <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0B1F33]/92 text-white backdrop-blur-xl">
     <div class="container-shell flex h-20 items-center justify-between">
       <NuxtLink to="/" class="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label="行星跨境首页">
-        <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-[#C9A86A]/60 text-[#D7BC83]">P</span>
+        <span class="grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-white p-1">
+          <img src="/android-chrome-192x192.png" alt="" class="h-full w-full object-contain" aria-hidden="true">
+        </span>
         <span class="min-w-0"><b class="block whitespace-nowrap text-[14px] tracking-[.15em] sm:text-[15px] sm:tracking-[.18em]">行星跨境</b><small class="hidden text-[9px] tracking-[.22em] text-white/45 min-[370px]:block">PLANET CROSS-BORDER</small></span>
       </NuxtLink>
       <nav class="hidden items-center gap-4 xl:gap-6 lg:flex">
