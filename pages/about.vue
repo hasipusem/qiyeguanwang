@@ -55,7 +55,7 @@ const teamCapabilities = [
           </div>
         </div>
         <figure class="relative mt-10 overflow-hidden rounded-3xl bg-[#0B1F33] sm:mt-14">
-          <NuxtImg src="/images/about/company-team-real.webp" alt="行星跨境团队会议现场" class="aspect-[16/9] w-full object-cover" sizes="100vw" preload />
+          <img src="/images/about/company-team-real.webp" alt="行星跨境团队会议现场" class="aspect-[16/9] w-full object-cover" fetchpriority="high" />
         </figure>
       </div>
     </section>
@@ -86,7 +86,7 @@ const teamCapabilities = [
       <div class="container-shell">
         <div class="grid items-center gap-9 lg:grid-cols-2 lg:gap-14">
           <div class="overflow-hidden rounded-3xl">
-            <NuxtImg src="/images/about/office.webp" alt="行星跨境现代办公环境示意照片" class="aspect-[4/3] w-full object-cover" sizes="100vw lg:50vw" loading="lazy" />
+            <img src="/images/about/office.webp" alt="行星跨境现代办公环境示意照片" class="aspect-[4/3] w-full object-cover" loading="lazy" />
           </div>
           <div>
             <div class="eyebrow">OUR WORKPLACE</div>
@@ -107,7 +107,7 @@ const teamCapabilities = [
         </div>
         <div class="mt-10 grid gap-5 lg:grid-cols-3 md:mt-14">
           <article v-for="team in teamCapabilities" :key="team.title" class="overflow-hidden rounded-3xl border border-white/10 bg-white/[.04]">
-            <NuxtImg :src="team.image" :alt="team.alt" class="aspect-[4/3] w-full object-cover" sizes="100vw lg:33vw" loading="lazy" />
+            <img :src="team.image" :alt="team.alt" class="aspect-[4/3] w-full object-cover" loading="lazy" />
             <div class="p-6">
               <div class="text-[10px] tracking-[.18em] text-[#C9A86A]">{{ team.en }}</div>
               <h3 class="mt-3 text-xl font-semibold">{{ team.title }}</h3>

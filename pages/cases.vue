@@ -56,7 +56,7 @@ const filteredCases = computed(() => activeCategory.value === '全部'
         <div class="mt-10 grid gap-6 lg:grid-cols-2 md:mt-14">
           <article v-for="item in filteredCases" :key="item.id" class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_18px_55px_rgba(11,31,51,.07)]">
             <div class="relative overflow-hidden">
-              <NuxtImg :src="item.image" :alt="item.imageAlt" class="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-[1.03]" sizes="100vw lg:50vw" loading="lazy" />
+              <img :src="item.image" :alt="item.imageAlt" class="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-[1.03]" loading="lazy" />
               <span class="absolute left-5 top-5 rounded-full px-3 py-1.5 text-xs backdrop-blur-md" :class="item.status === '业务实践' ? 'bg-[#C9A86A] text-[#0B1F33]' : 'bg-[#0B1F33]/80 text-white'">{{ item.status }}</span>
             </div>
             <div class="p-6 sm:p-8">

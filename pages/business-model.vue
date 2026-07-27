@@ -54,10 +54,10 @@ usePageSeo(
         </div>
         <div class="mt-5 grid gap-4 sm:grid-cols-2">
           <figure class="overflow-hidden rounded-3xl border border-white/10">
-            <NuxtImg src="/images/about/product-rd.webp" alt="制造企业与产品研发协同" class="aspect-[16/9] w-full object-cover" sizes="100vw sm:50vw" loading="lazy" />
+            <img src="/images/about/product-rd.webp" alt="制造企业与产品研发协同" class="aspect-[16/9] w-full object-cover" loading="lazy" />
           </figure>
           <figure class="overflow-hidden rounded-3xl border border-white/10">
-            <NuxtImg src="/images/about/customer-service.webp" alt="全球市场客户服务与运营支持" class="aspect-[16/9] w-full object-cover" sizes="100vw sm:50vw" loading="lazy" />
+            <img src="/images/about/customer-service.webp" alt="全球市场客户服务与运营支持" class="aspect-[16/9] w-full object-cover" loading="lazy" />
           </figure>
         </div>
       </div>

@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   modules: ['@netlify/nuxt', '@pinia/nuxt', '@nuxt/image'],
+  image: {
+    provider: 'none'
+  },
   routeRules: {
     '/contact': { redirect: { to: '/#apply', statusCode: 301 } },
     '/process': { redirect: { to: '/#apply', statusCode: 301 } }

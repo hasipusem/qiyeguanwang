@@ -71,11 +71,10 @@ const industryImages: Record<string, { src: string; alt: string }> = {
 
           <article class="overflow-hidden rounded-3xl bg-[#0B1F33] text-white">
             <div class="relative overflow-hidden">
-              <NuxtImg
+              <img
                 :src="industryImages[activeIndustry.slug].src"
                 :alt="industryImages[activeIndustry.slug].alt"
                 class="aspect-[16/8] w-full object-cover transition duration-500"
-                sizes="100vw lg:65vw"
                 loading="lazy"
               />
               <div class="absolute inset-0 bg-[linear-gradient(0deg,rgba(11,31,51,.68)_0%,transparent_65%)]"></div>

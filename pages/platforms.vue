@@ -16,12 +16,11 @@ usePageSeo(
 <template>
   <main>
     <section class="relative min-h-[700px] overflow-hidden bg-[#071725] pt-20 text-white sm:min-h-[760px]">
-      <NuxtImg
+      <img
         src="/images/overseas-warehouse.png"
         alt="行星跨境全球海外仓与智能履约网络"
         class="absolute inset-0 h-full w-full object-cover object-center"
-        sizes="100vw"
-        preload
+        fetchpriority="high"
       />
       <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,23,37,.98)_0%,rgba(7,23,37,.88)_35%,rgba(7,23,37,.25)_78%,rgba(7,23,37,.5)_100%)]" />
       <div class="absolute inset-0 bg-[linear-gradient(0deg,rgba(7,23,37,.72)_0%,transparent_45%)]" />
@@ -128,11 +127,10 @@ usePageSeo(
       <div class="container-shell">
         <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div class="overflow-hidden rounded-3xl bg-[#0B1F33]">
-            <NuxtImg
+            <img
               src="/images/overseas-warehouse.png"
               alt="现代化海外仓储与自动化订单履约"
               class="aspect-[4/3] h-full w-full object-cover object-[70%_center]"
-              sizes="100vw lg:50vw"
               loading="lazy"
             />
           </div>

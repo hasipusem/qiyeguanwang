@@ -21,12 +21,11 @@ defineProps<{
       </div>
 
       <figure v-if="image" class="relative overflow-hidden rounded-[28px] border border-white/12 bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,.28)]">
-        <NuxtImg
+        <img
           :src="image"
           :alt="imageAlt || title"
           class="aspect-[4/3] w-full object-cover sm:aspect-[16/10]"
-          sizes="100vw lg:48vw"
-          preload
+          fetchpriority="high"
         />
         <div class="absolute inset-0 bg-[linear-gradient(0deg,rgba(7,23,37,.62)_0%,transparent_48%)]"></div>
         <figcaption v-if="imageLabel" class="absolute bottom-4 left-4 rounded-full border border-white/15 bg-[#071725]/75 px-4 py-2 text-[10px] tracking-[.16em] text-white/75 backdrop-blur-md sm:bottom-5 sm:left-5">

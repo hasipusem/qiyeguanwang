@@ -180,11 +180,11 @@ const improvementSignals = ['市场数据', '消费者反馈', '广告表现', '
 
         <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-14">
           <figure class="relative overflow-hidden rounded-3xl">
-            <NuxtImg src="/images/overseas-warehouse.png" alt="行星跨境海外仓履约场景" class="aspect-[16/9] w-full object-cover" sizes="100vw sm:50vw" loading="lazy" />
+            <img src="/images/overseas-warehouse.png" alt="行星跨境海外仓履约场景" class="aspect-[16/9] w-full object-cover" loading="lazy" />
             <figcaption class="absolute bottom-4 left-4 rounded-full bg-[#071725]/75 px-4 py-2 text-xs text-white backdrop-blur-md">海外仓储与本地履约</figcaption>
           </figure>
           <figure class="relative overflow-hidden rounded-3xl">
-            <NuxtImg src="/images/about/operations.webp" alt="全球品牌数字化运营团队" class="aspect-[16/9] w-full object-cover" sizes="100vw sm:50vw" loading="lazy" />
+            <img src="/images/about/operations.webp" alt="全球品牌数字化运营团队" class="aspect-[16/9] w-full object-cover" loading="lazy" />
             <figcaption class="absolute bottom-4 left-4 rounded-full bg-[#071725]/75 px-4 py-2 text-xs text-white backdrop-blur-md">数据驱动全球运营</figcaption>
           </figure>
         </div>
