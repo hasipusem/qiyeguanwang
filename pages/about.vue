@@ -52,8 +52,7 @@ const teamCapabilities = [
           </div>
         </div>
         <figure class="relative mt-10 overflow-hidden rounded-3xl bg-[#0B1F33] sm:mt-14">
-          <NuxtImg src="/images/about/company-team.webp" alt="行星跨境团队协作示意照片" class="aspect-[16/9] w-full object-cover" sizes="100vw" preload />
-          <figcaption class="absolute bottom-4 left-4 rounded-full bg-[#071725]/75 px-4 py-2 text-xs text-white/70 backdrop-blur-md">AI 示意图片 · 待替换为真实团队照片</figcaption>
+          <NuxtImg src="/images/about/company-team-real.webp" alt="行星跨境团队会议现场" class="aspect-[16/9] w-full object-cover" sizes="100vw" preload />
         </figure>
       </div>
     </section>
