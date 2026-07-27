@@ -9,7 +9,7 @@
           <p class="max-w-sm text-sm leading-7 text-white/50">
             连接中国优秀制造能力与全球消费市场，共同打造具有国际竞争力的品牌。
           </p>
-          <NuxtLink to="/process#consultation" class="mt-6 inline-flex items-center text-sm font-medium text-[#D6B97E] transition hover:text-[#E4CA95]">
+          <NuxtLink to="/#apply" class="mt-6 inline-flex items-center text-sm font-medium text-[#D6B97E] transition hover:text-[#E4CA95]">
             合作咨询 →
           </NuxtLink>
         </div>
@@ -21,7 +21,6 @@
           <NuxtLink to="/platforms" class="block py-1.5 text-sm text-white/55 transition hover:text-white">主营平台</NuxtLink>
           <NuxtLink to="/industries" class="block py-1.5 text-sm text-white/55 transition hover:text-white">合作行业</NuxtLink>
           <NuxtLink to="/cases" class="block py-1.5 text-sm text-white/55 transition hover:text-white">成功案例</NuxtLink>
-          <NuxtLink to="/process" class="block py-1.5 text-sm text-white/55 transition hover:text-white">合作流程</NuxtLink>
         </div>
 
         <div>

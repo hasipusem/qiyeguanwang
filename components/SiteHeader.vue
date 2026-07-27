@@ -4,7 +4,7 @@ const open = ref(false)
 watch(() => route.path, () => open.value = false)
 const links = [
   ['关于我们','/about'],['联营模式','/business-model'],['运营体系','/system'],
-  ['主营平台','/platforms'],['合作行业','/industries'],['成功案例','/cases'],['合作流程','/process']
+  ['主营平台','/platforms'],['合作行业','/industries'],['成功案例','/cases']
 ]
 </script>
 <template>
@@ -18,14 +18,14 @@ const links = [
       </NuxtLink>
       <nav class="hidden items-center gap-4 xl:gap-6 lg:flex">
         <NuxtLink v-for="[label,to] in links" :key="to" :to="to" class="text-sm text-white/68 transition hover:text-[#D7BC83]">{{ label }}</NuxtLink>
-        <NuxtLink to="/process#consultation" class="rounded-full bg-[#C9A86A] px-5 py-2.5 text-sm font-semibold text-[#0B1F33]">合作咨询</NuxtLink>
+        <NuxtLink to="/#apply" class="rounded-full bg-[#C9A86A] px-5 py-2.5 text-sm font-semibold text-[#0B1F33]">合作咨询</NuxtLink>
       </nav>
       <button class="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/10 lg:hidden" :aria-expanded="open" :aria-label="open ? '关闭菜单' : '打开菜单'" @click="open=!open"><span class="text-xl">{{ open?'×':'☰' }}</span></button>
     </div>
     <nav v-if="open" class="max-h-[calc(100dvh-80px)] overflow-y-auto border-t border-white/10 bg-[#0B1F33] px-4 py-4 sm:px-5 lg:hidden">
       <NuxtLink to="/" class="block border-b border-white/5 py-3.5 text-sm text-white/75">首页</NuxtLink>
       <NuxtLink v-for="[label,to] in links" :key="to" :to="to" class="block border-b border-white/5 py-3.5 text-sm text-white/75">{{ label }}</NuxtLink>
-      <NuxtLink to="/process#consultation" class="mt-4 flex min-h-12 items-center justify-center rounded-full bg-[#C9A86A] text-sm font-semibold text-[#0B1F33]">合作咨询 →</NuxtLink>
+      <NuxtLink to="/#apply" class="mt-4 flex min-h-12 items-center justify-center rounded-full bg-[#C9A86A] text-sm font-semibold text-[#0B1F33]">合作咨询 →</NuxtLink>
     </nav>
   </header>
 </template>

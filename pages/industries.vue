@@ -82,7 +82,7 @@ const activeIndustry = ref(industries[0])
                 </ul>
               </div>
             </div>
-            <NuxtLink to="/process#consultation" class="btn-primary mt-9">咨询该行业合作 →</NuxtLink>
+            <NuxtLink to="/#apply" class="btn-primary mt-9">咨询该行业合作 →</NuxtLink>
           </article>
         </div>
       </div>
@@ -134,7 +134,7 @@ const activeIndustry = ref(industries[0])
           <h2 class="mt-5 max-w-3xl text-3xl font-semibold leading-tight sm:text-5xl">您的制造能力，可能正是下一个全球品牌的起点</h2>
           <p class="mt-5 max-w-2xl text-sm leading-7 text-white/55">提交主营品类与企业能力，我们将结合目标市场、渠道数据与品牌战略评估合作机会。</p>
         </div>
-        <NuxtLink to="/process#consultation" class="btn-primary w-full text-center sm:w-auto">提交合作申请 →</NuxtLink>
+        <NuxtLink to="/#apply" class="btn-primary w-full text-center sm:w-auto">提交合作申请 →</NuxtLink>
       </div>
     </section>
   </main>

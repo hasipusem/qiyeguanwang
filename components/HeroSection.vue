@@ -7,7 +7,7 @@
         <div class="mb-7 flex items-center gap-4"><div class="gold-line"></div><span class="text-[10px] tracking-[.22em] text-[#D5BB85] sm:text-xs sm:tracking-[.25em]">GLOBAL BRAND PARTNERSHIP</span></div>
         <h1 class="text-[clamp(42px,6.1vw,76px)] font-semibold leading-[1.06] tracking-[-.055em]">让中国制造<br><span class="text-[#D7BC83]">拥有全球品牌</span></h1>
         <p class="mt-7 max-w-xl text-[15px] leading-8 text-white/62 sm:text-[17px]">行星跨境通过全球品牌联营模式，帮助优秀制造企业连接全球消费市场，共同打造具有国际竞争力的品牌。</p>
-        <div class="mt-9 flex flex-col gap-3 sm:flex-row"><NuxtLink to="/process#consultation" class="btn-primary">合作咨询 <span>↗</span></NuxtLink><NuxtLink to="/business-model" class="btn-secondary">了解合作模式 <span>→</span></NuxtLink></div>
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row"><NuxtLink to="/#apply" class="btn-primary">合作咨询 <span>↗</span></NuxtLink><NuxtLink to="/business-model" class="btn-secondary">了解合作模式 <span>→</span></NuxtLink></div>
         <div class="mt-12 grid grid-cols-3 gap-3 border-t border-white/10 pt-6 sm:max-w-xl sm:gap-6">
           <div><b class="text-xl text-[#D7BC83] sm:text-2xl">20+</b><span class="mt-1 block text-[10px] leading-4 text-white/40 sm:text-xs">国家和地区<br class="hidden sm:block">仓储网络</span></div>
           <div><b class="text-xl text-[#D7BC83] sm:text-2xl">10+</b><span class="mt-1 block text-[10px] leading-4 text-white/40 sm:text-xs">全球主流<br class="hidden sm:block">渠道</span></div>

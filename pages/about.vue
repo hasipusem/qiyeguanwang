@@ -143,7 +143,7 @@ const teamCapabilities = [
               <div class="eyebrow text-[#C9A86A]">CONTACT US</div>
               <h2 class="mt-5 text-3xl font-semibold sm:text-4xl">联系我们</h2>
               <p class="mt-5 text-sm leading-7 text-white/55">欢迎制造企业、产业链伙伴与我们交流全球品牌联营机会。</p>
-              <NuxtLink to="/process#consultation" class="btn-primary mt-7">合作咨询 →</NuxtLink>
+              <NuxtLink to="/#apply" class="btn-primary mt-7">合作咨询 →</NuxtLink>
             </div>
             <dl class="space-y-5 text-sm">
               <div>

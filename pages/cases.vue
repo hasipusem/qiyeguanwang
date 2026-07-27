@@ -96,7 +96,7 @@ const filteredCases = computed(() => activeCategory.value === '全部'
           <h2 class="mt-5 max-w-4xl text-3xl font-semibold leading-tight sm:text-5xl">下一条增长路径，可以从您的制造优势开始</h2>
           <p class="mt-5 max-w-2xl text-sm leading-7 text-white/55">提交企业与主营产品信息，我们将结合市场、渠道与供应链能力评估合作机会。</p>
         </div>
-        <NuxtLink to="/process#consultation" class="btn-primary">合作咨询 →</NuxtLink>
+        <NuxtLink to="/#apply" class="btn-primary">合作咨询 →</NuxtLink>
       </div>
     </section>
   </main>

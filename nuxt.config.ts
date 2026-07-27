@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   modules: ['@netlify/nuxt', '@pinia/nuxt', '@nuxt/image'],
   routeRules: {
-    '/contact': { redirect: { to: '/process#consultation', statusCode: 301 } }
+    '/contact': { redirect: { to: '/#apply', statusCode: 301 } },
+    '/process': { redirect: { to: '/#apply', statusCode: 301 } }
   },
   vite: { plugins: [tailwindcss()] },
   app: {

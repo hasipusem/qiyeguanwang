@@ -100,7 +100,7 @@ usePageSeo(
             <div class="eyebrow">FREQUENTLY ASKED QUESTIONS</div>
             <h2 class="section-title mt-5">品牌联营常见问题</h2>
             <p class="section-copy mt-5">围绕模式区别、运营分工、合作流程与结算机制，集中回答制造企业最关心的问题。</p>
-            <NuxtLink to="/process#consultation" class="btn-primary mt-8">还有问题？合作咨询 →</NuxtLink>
+            <NuxtLink to="/#apply" class="btn-primary mt-8">还有问题？合作咨询 →</NuxtLink>
           </div>
           <FaqSection :items="partnershipFaqs" :categories="faqCategories" />
         </div>
