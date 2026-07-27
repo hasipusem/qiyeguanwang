@@ -1,2 +1,110 @@
-<script setup lang="ts">usePageSeo('品牌联营模式','了解行星跨境品牌共建、资源共享、利润共享与风险共担的全球品牌联营机制。')</script>
-<template><main><PageHero eyebrow="PARTNERSHIP MODEL" title="不是一次交易，而是一项长期事业" desc="全球品牌联营是一种品牌共建、资源共享、利润共享、风险共担的新型合作模式。" /><section class="section-pad"><div class="container-shell"><div class="text-center"><div class="eyebrow">WHY PARTNERSHIP</div><h2 class="section-title mt-5">解决传统跨境合作的结构性问题</h2></div><div class="mt-10 grid gap-4 md:mt-12 md:grid-cols-3 md:gap-5"><div v-for="(x,i) in [['供应脱节','工厂不理解市场，销售端难以参与制造创新。'],['能力缺口','优秀制造能力缺少市场数据、渠道与品牌支撑。'],['出海成本高','独立搭建海外团队、合规与仓储体系投入巨大。']]" :key="x[0]" class="card p-6 sm:p-8"><span class="text-xs text-[#C9A86A]">0{{ i+1 }}</span><h3 class="mt-6 text-xl font-semibold text-[#0B1F33] sm:mt-8">{{ x[0] }}</h3><p class="mt-4 text-sm leading-7 text-slate-500">{{ x[1] }}</p></div></div></div></section><section class="section-pad bg-[#0B1F33] text-white"><div class="container-shell"><div class="grid gap-4 lg:grid-cols-2 lg:gap-5"><div class="rounded-3xl border border-white/10 p-6 sm:p-9"><small class="text-[#C9A86A]">制造企业</small><h3 class="mt-4 text-xl font-semibold sm:text-2xl">专注制造优势</h3><div class="mt-6 grid grid-cols-2 gap-3 text-sm text-white/60 sm:mt-7 sm:gap-4"><span v-for="x in ['产品研发','设计优化','生产制造','品质控制','供应链保障','持续迭代']" :key="x">✓ {{ x }}</span></div></div><div class="rounded-3xl border border-[#C9A86A]/30 bg-white/5 p-6 sm:p-9"><small class="text-[#C9A86A]">行星跨境</small><h3 class="mt-4 text-xl font-semibold sm:text-2xl">承担全球运营</h3><div class="mt-6 grid grid-cols-2 gap-3 text-sm text-white/60 sm:mt-7 sm:gap-4"><span v-for="x in ['市场研究','AI选品','品牌建设','平台运营','海外仓储','全球营销','客户服务','数据优化']" :key="x">✓ {{ x }}</span></div></div></div></div></section><section class="section-pad"><div class="container-shell grid gap-9 lg:grid-cols-2 lg:gap-12"><div><div class="eyebrow">PROFIT SHARING</div><h2 class="section-title mt-5">公开核算，50% : 50% 利润共享</h2><p class="section-copy mt-6">每月共同核算联营项目经营成果。销售收入扣除产品、物流、平台、广告、仓储、退货与必要合规费用后，项目毛利润由双方按固定比例分配。</p></div><div class="card p-6 sm:p-9"><div class="text-xs text-slate-400">项目毛利润</div><div class="mt-5 text-base leading-8 text-[#0B1F33] sm:text-lg sm:leading-9">销售收入 <span class="text-[#C9A86A]">−</span> 产品成本 <span class="text-[#C9A86A]">−</span> 物流履约 <span class="text-[#C9A86A]">−</span> 平台广告 <span class="text-[#C9A86A]">−</span> 必要经营费用</div><div class="mt-7 border-t border-slate-100 pt-6 sm:mt-8 sm:pt-7"><b class="block text-3xl text-[#0B1F33] sm:inline sm:text-4xl">50 / 50</b><small class="mt-2 block text-slate-400 sm:ml-3 sm:inline">共同分享经营成果</small></div></div></div></section><section class="section-pad bg-[#F7F8FA]"><div class="container-shell"><div class="text-center"><div class="eyebrow">CO-BRANDING</div><h2 class="section-title mt-5">两种品牌共创路径</h2></div><div class="mx-auto mt-10 grid max-w-5xl gap-4 md:mt-12 md:grid-cols-2 md:gap-5"><div class="card p-6 sm:p-8"><small class="text-[#A07D43]">A 模式</small><h3 class="mt-4 text-xl font-semibold text-[#0B1F33] sm:text-2xl">品牌授权合作</h3><p class="mt-4 text-sm leading-7 text-slate-500">依托行星现有品牌、全球渠道与运营能力，快速进入国际市场，缩短成长周期。</p></div><div class="card p-6 sm:p-8"><small class="text-[#A07D43]">B 模式</small><h3 class="mt-4 text-xl font-semibold text-[#0B1F33] sm:text-2xl">共同品牌孵化</h3><p class="mt-4 text-sm leading-7 text-slate-500">双方共同发起、运营和建设新的品牌项目，共同沉淀商标、专利与长期品牌资产。</p></div></div></div></section></main></template>
+<script setup lang="ts">
+import { faqCategories, partnershipFaqs } from '~/data/faqs'
+
+usePageSeo(
+  '品牌联营模式',
+  '了解行星跨境品牌共建、资源共享、利润共享与风险共担的全球品牌联营机制，以及运营分工、合作流程和结算方式。'
+)
+</script>
+
+<template>
+  <main>
+    <PageHero
+      eyebrow="PARTNERSHIP MODEL"
+      title="不是一次交易，而是一项长期事业"
+      desc="全球品牌联营是一种品牌共建、资源共享、利润共享、风险共担的新型合作模式。"
+    />
+
+    <section class="section-pad">
+      <div class="container-shell">
+        <div class="text-center">
+          <div class="eyebrow">WHY PARTNERSHIP</div>
+          <h2 class="section-title mt-5">解决传统跨境合作的结构性问题</h2>
+        </div>
+        <div class="mt-10 grid gap-4 md:mt-12 md:grid-cols-3 md:gap-5">
+          <article v-for="(item,index) in [['供应脱节','工厂不理解市场，销售端难以参与制造创新。'],['能力缺口','优秀制造能力缺少市场数据、渠道与品牌支撑。'],['出海成本高','独立搭建海外团队、合规与仓储体系投入巨大。']]" :key="item[0]" class="card p-6 sm:p-8">
+            <span class="text-xs text-[#C9A86A]">0{{ index + 1 }}</span>
+            <h3 class="mt-6 text-xl font-semibold text-[#0B1F33] sm:mt-8">{{ item[0] }}</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-500">{{ item[1] }}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad bg-[#0B1F33] text-white">
+      <div class="container-shell">
+        <div class="grid gap-4 lg:grid-cols-2 lg:gap-5">
+          <article class="rounded-3xl border border-white/10 p-6 sm:p-9">
+            <small class="text-[#C9A86A]">制造企业</small>
+            <h3 class="mt-4 text-xl font-semibold sm:text-2xl">专注制造优势</h3>
+            <div class="mt-6 grid grid-cols-2 gap-3 text-sm text-white/60 sm:mt-7 sm:gap-4">
+              <span v-for="item in ['产品研发','设计优化','生产制造','品质控制','供应链保障','持续迭代']" :key="item">✓ {{ item }}</span>
+            </div>
+          </article>
+          <article class="rounded-3xl border border-[#C9A86A]/30 bg-white/5 p-6 sm:p-9">
+            <small class="text-[#C9A86A]">行星跨境</small>
+            <h3 class="mt-4 text-xl font-semibold sm:text-2xl">承担全球运营</h3>
+            <div class="mt-6 grid grid-cols-2 gap-3 text-sm text-white/60 sm:mt-7 sm:gap-4">
+              <span v-for="item in ['市场研究','AI 选品','品牌建设','平台运营','海外仓储','全球营销','客户服务','数据优化']" :key="item">✓ {{ item }}</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container-shell grid gap-9 lg:grid-cols-2 lg:gap-12">
+        <div>
+          <div class="eyebrow">PROFIT SHARING</div>
+          <h2 class="section-title mt-5">公开核算，50% : 50% 利润共享</h2>
+          <p class="section-copy mt-6">每月共同核算联营项目经营成果。销售收入扣除产品、物流、平台、广告、仓储、退货与必要合规费用后，项目毛利润由双方按固定比例分配。</p>
+        </div>
+        <div class="card p-6 sm:p-9">
+          <div class="text-xs text-slate-400">项目毛利润</div>
+          <div class="mt-5 text-base leading-8 text-[#0B1F33] sm:text-lg sm:leading-9">
+            销售收入 <span class="text-[#C9A86A]">−</span> 产品成本 <span class="text-[#C9A86A]">−</span> 物流履约 <span class="text-[#C9A86A]">−</span> 平台广告 <span class="text-[#C9A86A]">−</span> 必要经营费用
+          </div>
+          <div class="mt-7 border-t border-slate-100 pt-6 sm:mt-8 sm:pt-7">
+            <b class="block text-3xl text-[#0B1F33] sm:inline sm:text-4xl">50 / 50</b>
+            <small class="mt-2 block text-slate-400 sm:ml-3 sm:inline">共同分享经营成果</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad bg-[#F7F8FA]">
+      <div class="container-shell">
+        <div class="text-center">
+          <div class="eyebrow">CO-BRANDING</div>
+          <h2 class="section-title mt-5">两种品牌共创路径</h2>
+        </div>
+        <div class="mx-auto mt-10 grid max-w-5xl gap-4 md:mt-12 md:grid-cols-2 md:gap-5">
+          <article class="card p-6 sm:p-8">
+            <small class="text-[#A07D43]">A 模式</small>
+            <h3 class="mt-4 text-xl font-semibold text-[#0B1F33] sm:text-2xl">品牌授权合作</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-500">依托行星现有品牌、全球渠道与运营能力，快速进入国际市场，缩短成长周期。</p>
+          </article>
+          <article class="card p-6 sm:p-8">
+            <small class="text-[#A07D43]">B 模式</small>
+            <h3 class="mt-4 text-xl font-semibold text-[#0B1F33] sm:text-2xl">共同品牌孵化</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-500">双方共同发起、运营和建设新的品牌项目，共同沉淀商标、专利与长期品牌资产。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container-shell">
+        <div class="grid gap-8 lg:grid-cols-[.72fr_1.28fr] lg:gap-14">
+          <div>
+            <div class="eyebrow">FREQUENTLY ASKED QUESTIONS</div>
+            <h2 class="section-title mt-5">品牌联营常见问题</h2>
+            <p class="section-copy mt-5">围绕模式区别、运营分工、合作流程与结算机制，集中回答制造企业最关心的问题。</p>
+            <NuxtLink to="/process#consultation" class="btn-primary mt-8">还有问题？合作咨询 →</NuxtLink>
+          </div>
+          <FaqSection :items="partnershipFaqs" :categories="faqCategories" />
+        </div>
+      </div>
+    </section>
+  </main>
+</template>

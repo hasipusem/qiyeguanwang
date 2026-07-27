@@ -4,7 +4,7 @@ const open = ref(false)
 watch(() => route.path, () => open.value = false)
 const links = [
   ['关于我们','/about'],['联营模式','/business-model'],['运营体系','/system'],
-  ['主营平台','/platforms'],['合作行业','/industries'],['合作流程','/process']
+  ['主营平台','/platforms'],['合作行业','/industries'],['成功案例','/cases'],['合作流程','/process']
 ]
 </script>
 <template>
@@ -14,7 +14,7 @@ const links = [
         <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-[#C9A86A]/60 text-[#D7BC83]">P</span>
         <span class="min-w-0"><b class="block whitespace-nowrap text-[14px] tracking-[.15em] sm:text-[15px] sm:tracking-[.18em]">行星跨境</b><small class="hidden text-[9px] tracking-[.22em] text-white/45 min-[370px]:block">PLANET CROSS-BORDER</small></span>
       </NuxtLink>
-      <nav class="hidden items-center gap-5 xl:gap-7 lg:flex">
+      <nav class="hidden items-center gap-4 xl:gap-6 lg:flex">
         <NuxtLink v-for="[label,to] in links" :key="to" :to="to" class="text-sm text-white/68 transition hover:text-[#D7BC83]">{{ label }}</NuxtLink>
         <NuxtLink to="/process#consultation" class="rounded-full bg-[#C9A86A] px-5 py-2.5 text-sm font-semibold text-[#0B1F33]">合作咨询</NuxtLink>
       </nav>

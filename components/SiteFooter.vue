@@ -18,6 +18,7 @@
           <NuxtLink to="/system" class="block py-1.5 text-sm text-white/55 transition hover:text-white">全球运营体系</NuxtLink>
           <NuxtLink to="/platforms" class="block py-1.5 text-sm text-white/55 transition hover:text-white">主营平台</NuxtLink>
           <NuxtLink to="/industries" class="block py-1.5 text-sm text-white/55 transition hover:text-white">合作行业</NuxtLink>
+          <NuxtLink to="/cases" class="block py-1.5 text-sm text-white/55 transition hover:text-white">成功案例</NuxtLink>
           <NuxtLink to="/process" class="block py-1.5 text-sm text-white/55 transition hover:text-white">合作流程</NuxtLink>
         </div>
 
