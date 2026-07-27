@@ -249,7 +249,7 @@ const improvementSignals = ['市场数据', '消费者反馈', '广告表现', '
               <span class="mt-0.5 text-[#D7BC83]">✓</span>{{ item }}
             </div>
           </div>
-          <NuxtLink to="/contact" class="btn-primary mt-8 w-full">评估合作机会 →</NuxtLink>
+          <NuxtLink to="/process#consultation" class="btn-primary mt-8 w-full">评估合作机会 →</NuxtLink>
         </div>
       </div>
     </section>
@@ -263,7 +263,7 @@ const improvementSignals = ['市场数据', '消费者反馈', '广告表现', '
           <span v-for="signal in improvementSignals" :key="signal" class="rounded-full border border-white/12 px-4 py-2 text-xs text-white/55 sm:px-5 sm:text-sm">{{ signal }}</span>
         </div>
         <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-          <NuxtLink to="/contact" class="btn-primary">提交合作申请 <span>↗</span></NuxtLink>
+          <NuxtLink to="/process#consultation" class="btn-primary">提交合作申请 <span>↗</span></NuxtLink>
           <NuxtLink to="/business-model" class="btn-secondary">了解联营机制 <span>→</span></NuxtLink>
         </div>
       </div>

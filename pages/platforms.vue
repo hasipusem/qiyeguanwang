@@ -35,7 +35,7 @@ usePageSeo(
             从平台准入、品牌内容、广告运营到海外仓履约，我们以多平台、多国家、多渠道布局，帮助中国制造建立稳定、可持续的全球销售网络。
           </p>
           <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-            <NuxtLink to="/contact" class="btn-primary">咨询渠道合作 →</NuxtLink>
+            <NuxtLink to="/process#consultation" class="btn-primary">咨询渠道合作 →</NuxtLink>
             <a href="#platform-network" class="btn-secondary">查看平台矩阵</a>
           </div>
         </div>
@@ -158,7 +158,7 @@ usePageSeo(
           <h2 class="section-title mt-5 max-w-4xl">让您的产品进入合适的平台，成为长期经营的全球品牌</h2>
           <p class="section-copy mt-5 max-w-2xl">提交企业主营产品、目标市场与合作需求，我们将评估渠道适配度和联营机会。</p>
         </div>
-        <NuxtLink to="/contact" class="btn-primary w-full text-center sm:w-auto">提交合作申请 →</NuxtLink>
+        <NuxtLink to="/process#consultation" class="btn-primary w-full text-center sm:w-auto">提交合作申请 →</NuxtLink>
       </div>
     </section>
   </main>
